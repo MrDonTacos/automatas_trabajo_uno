@@ -3,3 +3,7 @@
     width: 98vw;
     height: 98vh;
 }
+
+img {
+    display: none;
+}
