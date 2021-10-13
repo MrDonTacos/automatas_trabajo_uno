@@ -1,15 +1,15 @@
-class Player {
-    constructor(width, heigth, screenWidth, screenHeight) {
-        this.width = width
-        this.heigth = heigth
+export default class Player {
+    constructor(screenWidth, screenHeight) {
+        this.width = 400
+        this.height = 150
 
-        this.postition = {
-            x: screenWidth / 2 - this.width /2,
-            y: screenHeight - this.heigth -10
+        this.position = {
+            x: screenWidth / 4 - this.width /2,
+            y: screenHeight - this.height - 20
         }
     }
 
     draw = (ctx) => {
-        ctx.fillRect(this.postition.x, this.postition.y, this.heigth)
+        ctx.fillRect(this.position.x, this.position.y,this.width, this.height)
     }
 }
