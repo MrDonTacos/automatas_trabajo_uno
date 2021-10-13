@@ -1,5 +1,6 @@
 export default class Player {
     constructor(screenWidth, screenHeight) {
+        this.imgPlayer = document.getElementById('img_pato')
         this.width = 400
         this.height = 150
 
@@ -10,6 +11,6 @@ export default class Player {
     }
 
     draw = (ctx) => {
-        ctx.fillRect(this.position.x, this.position.y,this.width, this.height)
+        ctx.drawImage(imgPlayer,this.position.x, this.position.y,this.width, this.height)
     }
 }
